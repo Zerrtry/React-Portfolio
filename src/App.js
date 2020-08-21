@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Contacts from "./components/Contacts";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

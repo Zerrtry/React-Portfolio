@@ -6,9 +6,11 @@ import "./style.css";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <h2>
-        Dmitrii Zverev <br/> Chicago IL
-      </h2>
+      <div class="navbar-brand">
+        <h2>Dmitrii Zverev</h2> 
+        <h5>Chicago IL</h5> 
+      </div>
+      
       <div>
         <ul className="navbar-nav">
           <li className="nav-item">

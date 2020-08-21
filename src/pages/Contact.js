@@ -1,4 +1,8 @@
 import React, {Component} from "react";
+import ContactForm from "../components/ContactForm"
+import Container from "../components/Container";
+import Row from "../components/Row";
+import Col from "../components/Col";
 
 class Contact extends Component {
     state = {
@@ -22,33 +26,18 @@ class Contact extends Component {
 
     render () {
         return (
-            <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
-
-                <label className="message-name" htmlFor="message-name">Your Name</label>
-                <input onChange={this.handleInputChange} 
-                       name="name" 
-                       className="message-name" 
-                       type="text" 
-                       placeholder="Your Name"/>
-
-                <label className="message-subject" htmlFor="message-subject">Subject of Your Email</label>
-                <input onChange={this.handleInputChange} 
-                       name="subject" 
-                       className="message-subject" 
-                       type="text" 
-                       placeholder="Subject of Your Email"/>
-
-                <label className="message" htmlFor="message-input">Your Message</label>
-                <textarea onChange={this.handleInputChange} 
-                       name="message" 
-                       className="message-input" 
-                       type="text" 
-                       placeholder="Please write your message here"/>
-
-                <div className="button-container">
-                    <a type="submit" className="button button-primary" href={`mailto:w@w.us?subject=${this.state.subject}&body=${this.state.message}`}>Mail Me</a>
-                </div>
-            </form>
+            <Container style={{ marginTop: 30 }}>
+                <Row>
+                    <Col size="md-12">
+                        <ContactForm
+                            inputFunction = {this.handleInputChange}
+                            subject = {this.state.subject}
+                            message = {this.state.message}
+                            name = {this.state.name}
+                        />
+                    </Col>
+                </Row>
+            </Container>
         );
     };
 }
