@@ -5,7 +5,7 @@ import Row from "../components/Row";
 import Col from "../components/Col";
 ;
 
-function About() {
+function Home() {
   return (
     <div>
       <Hero/>
@@ -30,4 +30,4 @@ After 18 years as a lawyer, I decided to try something new. I have started to le
   );
 }
 
-export default About;
+export default Home;

@@ -1,19 +1,11 @@
 import React, { Component } from "react";
-import API from "../utils/API";
 import Card from "../components/Card";
-import Alert from "../components/Alert";
+import projects from "../projects.json"
 
-class Discover extends Component {
+class Projects extends Component {
   state = {
-    image: "",
-    match: false,
-    matchCount: 0
+   projects
   };
-
-  // When the component mounts, load the next dog to be displayed
-  componentDidMount() {
-    this.loadNextDog();
-  }
 
   handleBtnClick = event => {
     // Get the data-value of the clicked button
@@ -35,37 +27,32 @@ class Discover extends Component {
       newState.match = false;
     }
     // Replace our component's state with newState, load the next dog image
-    this.setState(newState);
-    this.loadNextDog();
+    this.setState(newState)
   };
 
-  loadNextDog = () => {
-    API.getRandomDog()
-      .then(res =>
-        this.setState({
-          image: res.data.message
-        })
-      )
-      .catch(err => console.log(err));
-  };
+
 
   render() {
     return (
       <div>
-        <h1 className="text-center">Make New Friends</h1>
-        <h3 className="text-center">
-          Thumbs up on any pups you'd like to meet!
-        </h3>
-        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
-        <h1 className="text-center">
-          Made friends with {this.state.matchCount} pups so far!
-        </h1>
-        <Alert style={{ opacity: this.state.match ? 1 : 0 }} type="success">
-          Yay! That Pup Liked You Too!!!
-        </Alert>
+        <h1 className="text-center">Projects</h1>
+        {this.state.projects.map(project => (
+          <Card
+            id={project.id}
+            key={project.id}
+            name={project.name}
+            image={project.image}
+            github={project.github}
+            deployed={project.deployed}
+          />
+        ))}
+     
+
+        {/* <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
+        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} /> */}
       </div>
     );
   }
 }
 
-export default Discover;
+export default Projects;

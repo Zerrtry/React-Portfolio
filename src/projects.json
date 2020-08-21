@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "name": "Book Club",
+      "image": "images/book-club.png",
+      "github": "Fry Cook",
+      "deployed": "A Pineapple Under the Sea"
+    },
+    {
+      "id": 2,
+      "name": "Weather-dashboard",
+      "image": "images/Weather-dashboard.png",
+      "github": "Restaurant Owner",
+      "deployed": "A Giant Anchor"
+    },
+    {
+      "id": 3,
+      "name": "Squidward",
+      "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
+      "github": "Cashier",
+      "deployed": "An Easter Island Head"
+    },
+    {
+      "id": 4,
+      "name": "Weather-Movie-Picker",
+      "image": "/images/weather-movie-picker.png",
+      "github": "https://github.com/Zerrtry/Project-1-Weather-Movie-Picker-",
+      "deployed": "https://zerrtry.github.io/Project-1-Weather-Movie-Picker-/"
+    },
+    {
+      "id": 5,
+      "name": "Courage",
+      "image": "https://vignette4.wikia.nocookie.net/vsbattles/images/3/39/Courage-0.png/revision/latest?cb=20160719055423",
+      "github": "A Cowardly Dog",
+      "deployed": "Nowhere, Kansas"
+    },
+    {
+      "id": 6,
+      "name": "Doug Funnie",
+      "image": "https://vignette1.wikia.nocookie.net/doug/images/3/3b/Doug001.gif/revision/latest?cb=20110807170511",
+      "github": "Student",
+      "deployed": "Bluffington"
+    }
+  ]
+  

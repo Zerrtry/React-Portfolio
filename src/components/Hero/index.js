@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import Photo from "../../assets/images/portfolio-photo.png"
+import Photo from "../../images/portfolio-photo.png"
 
 function Hero(props) {
   return (
