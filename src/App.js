@@ -12,17 +12,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <Router>
-      <div>
-        <Navbar />
+        <Navbar sticky="top"/>
         <Wrapper>
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={Contact} />
+        <Contacts />
         </Wrapper>
         <Footer />
-        <Contacts />
-      </div>
     </Router>
   );
 }
