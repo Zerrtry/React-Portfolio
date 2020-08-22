@@ -3,7 +3,7 @@ import "./style.css";
 
 function Contacts() {
   return (
-    <div className="sidenav">
+    <div className="card side">
        {/* <div className="col-md-3 col-md-offset-1 sidebar"> */}
         <h1>Connect with Me</h1>
         <a href="https://github.com/Zerrtry" target="_blank"><i className="fa fa-github fa-2x" aria-hidden="true" ></i></a> 
