@@ -18,9 +18,9 @@ function Home() {
         <Row>
           <Col size="md-12">
             <p>
-            I am Dmitrii Zverev, welcome to my portfolio page. If you have any reason to Contact Me, please be sure to do it.
-
-            After 18 years as a lawyer, I decided to try something new. I have started to learn web-developing at the Northwestern Coding Boot Camp without previous experience in software. However, technic has been interesting for me always. Even in childhood, my favorite magazines were about building scale models and other entertaining topics related to technology. I'm expecting to get professional into programming and learn as much as possible about it!
+            I am Dmitrii Zverev, a Full-Stack Web Developer. Welcome to my portfolio page. Please contact me for full-stack web development projects.
+ 
+After 18 years as a lawyer, I decided to try something new. I started to learn web-development even though I had no previous experience in software. I have recently completed an intense 24-week Full-Stack Coding Bootcamp from Northwestern University,. However, science and technology has always interested me. Even in childhood, my favorite magazines were about building scale models and other entertaining topics related to technology. I'm excited to get professionally into programming and want to work, learn and grow in this field.
             </p>
             <a href="https://docs.google.com/document/d/1DS2DIkUIm5BBt7SLdHHnEHezM81L-nASURQsF62X2Lg/edit?usp=sharing" target="_blank">Resume</a>
           </Col>
