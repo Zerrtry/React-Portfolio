@@ -1,0 +1,45 @@
+.about {
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 2em; */
+    /* position: relative; */
+    justify-content: center;
+    /* align-items: center; */
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2.5em 1em;
+}
+
+.contacts-hidden{
+    display: none;
+}
+
+.contacts {
+    background-color: white;
+    max-width: 3.5em;
+    /* float: right;
+    height: 100%; */
+    position: relative;
+}
+
+    .toggleBar {
+    background-color: gray;
+    max-width: 3.5em;
+    position: relative
+} 
+
+@media (max-width: 576px){
+    .about{
+        padding: 1em 0.5em 1em 0;
+    } 
+    .contacts,
+    .toggleBar {
+        display: none;
+    }
+    .contacts-hidden{
+        display: inline-flex;
+        margin-top: 2em;
+    }
+}
