@@ -1,9 +1,3 @@
-.toggleBar {
-    background-color: gray;
-    max-width: 3.5em;
-    position: relative;
-}
-
 .toggleBar .navbar{
     height: 100%;
     width: inherit;
@@ -15,52 +9,33 @@
 }
 
 .toggle{
-    color: white;
-    background-color: black;
     border: 2px solid black;
+    color: white;
+    padding: 0 0.2em; 
+    background: black;
+    border-radius: 3px;
     box-shadow: none;
-    padding: 0;
-    display:block;margin: auto;
+    display:block;
+    margin: auto;
     text-align: center;
     text-decoration: none;
     font-size: 1.1em;
-    padding: 0 0.2em;  
 }
 
-.title i{ 
-    margin: auto;
-    display: block;
-}
-
-button.toggle:hover,
-button.toggle.hover {
-    color: rgb(36, 36, 36);
-    background-color: transparent;
-    border: 2px solid rgb(36, 36, 36);
+.toggle:hover {
+    color: rgba(36, 36, 36, 0.637);
+    background: transparent;
     text-decoration: none;
-    box-shadow: 2px 6px 6px #56198b8f;
+    box-shadow: 2px 6px 6px #7523bdb0;
     text-shadow: 1px 5px 5px #7523bdb0;
     transition: all 0.3s ease-in-out 0s;
     outline: none;
 }
 
-button.toggle.focus,
-button.toggle:focus{
-    outline: none;
-    box-shadow: 2px 6px 6px #56198b8f;
-}
-
-button.toggle.active.focus,
-button.toggle.active:focus,
-button.toggle:active.focus,
-button.toggle:active:focus,
-button.toggle.active:hover,
-button.toggle:active:hover
-{
-    box-shadow: 2px 4px 4px #7523bdb0;
-    text-shadow: 1px 3px 3px #7523bdb0;
+.toggle:active {
+    box-shadow: 2px 4px 4px #56198b8f;
+    text-shadow: 1px 3px 3px #56198b8f;
     background-color: transparent;
-    border: 2px solid black;
     color:  black;
     transform: translateY(2px);
     transition: all 0s ease-in-out 0s;

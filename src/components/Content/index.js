@@ -2,33 +2,40 @@ import React from 'react';
 import './style.css';
 import ContactBar from '../ContactBar';
 import ButtonsOnlend from '../Buttons-on-lend';
-import SideBar from '../SideBar';
 import About from '../About';
 import ToggleBar from '../ToggleBar';
+// import ContactForm from '../ContactForm';
 
-function Content() {
+// import { BrowserRouter as Router, Route } from "react-router-dom";
+
+function Content(props) {
   return (
-    <div className="row flex-fill d-flex justify-content-start">
-     
-        <div className="col-sm-1 toggleBar">
-        <ToggleBar/>
-        </div>
-        <div className="col-sm">
-           <SideBar>
-            <div className="about">
-              <About/>
-              <ButtonsOnlend/>
-              <div className="contacts-hidden">
-                <ContactBar/>
-              </div>
+    <div className="row flex-fill d-flex justify-content-center">
+      <div className="col-sm-1 toggleBar">
+        <ToggleBar toggleSideBar={props.toggleSideBar}/>
+      </div>
+      <div className="col-sm">
+        {/* <Router> */}
+          <div className="content-conteiner">
+            {/* <Route 
+              exact path ="/"
+              component = {About, ButtonsOnlend}
+            />
+            <Route 
+              exact path ="contact"
+              component = {ContactForm}
+            /> */}
+            <About/>
+            <ButtonsOnlend/>
+            <div className="contacts-hidden">
+              <ContactBar/>
             </div>
-          </SideBar>
-        </div> 
-      
+          </div>
+        {/* </Router> */}
+      </div>
       <div className="col-sm-1 contacts">
         <ContactBar/>
       </div>
-      
     </div>
   );
 }

@@ -1,0 +1,76 @@
+div.content-conteiner div.main-text{
+    text-align: right;
+    
+}
+.button-container {
+    justify-content: center;
+    
+}
+form {
+    justify-content: center;
+}
+
+form .button-container {
+    margin-top: 2em;
+}
+
+.main-button {
+    width: 5em;
+    margin: auto;
+}
+
+.form-group {
+    max-width: 35rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div.content-conteiner {
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 2em; */
+    /* position: relative; */
+    justify-content: center;
+    /* align-items: center; */
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2.5em 1em;
+    width: initial
+}
+
+.toggleBar {
+    max-width: 3.5em;
+    background-color: white;
+    position: relative
+}
+
+.back-button{
+    position: absolute;
+    margin: auto;
+    height: 2.5em;
+    width: inherit;
+    top:50%;
+    margin-top: -1.5em;
+    font-size: 0.7em; 
+}
+
+.contacts {
+    background-color: white;
+    max-width: 3.5em;
+    /* float: right;
+    height: 100%; */
+    position: relative;
+}
+
+@media (max-width: 576px){
+    .content-conteiner {
+        padding: 1em 0.5em 1em 0;
+    } 
+    .contacts,
+    .toggleBar {
+        display: none;
+    }
+}

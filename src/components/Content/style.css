@@ -1,4 +1,10 @@
-.about {
+.toggleBar {
+    max-width: 3.5em;
+    background-color: white;
+    position: relative
+}
+
+.content-conteiner {
     /* margin: auto; */
     display: flex;
     flex-direction: column;
@@ -24,14 +30,9 @@
     position: relative;
 }
 
-    .toggleBar {
-    background-color: gray;
-    max-width: 3.5em;
-    position: relative
-} 
 
 @media (max-width: 576px){
-    .about{
+    .content-conteiner {
         padding: 1em 0.5em 1em 0;
     } 
     .contacts,

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-// import './style.css';
+import ContactBar from '../ContactBar';
+import { Link } from "react-router-dom";
+import './style.css';
 
-function ContactForm() {
+function ContactForm(props) {
 
-    const [state, setState] = useState ({})
+    const [state, setState] = useState({})
 
-    handleInputChange = event => {
+    const handleInputChange = event => {
         event.preventDefault();
         console.log(event);
         const value = event.target.value;
@@ -19,9 +21,22 @@ function ContactForm() {
     };
 
     return (
-            <div className="row">
-                <div className="col-ms">
+        <div className="row flex-fill d-flex justify-content-center">
+            <div className="col-sm-1 toggleBar">
+                <div className="back-button">
+                    <Link to="/">
+                        <a className="github" title="Back">
+                            <i class="fas fa-arrow-circle-left"></i>
+                        </a>
+                    </Link>
+                </div>
+            </div>
+            <div className="col-sm">
+                <div className="content-conteiner">
                     <form>
+                        <div className="form-group">
+                            <div className="main-text">Thanks for taking the time to reach out.</div>
+                        </div>
                         <div className="form-group">
                             <label htmlFor="exampleFormControlInput1">Name</label>
                             <input type="text" className="form-control"
@@ -48,11 +63,15 @@ function ContactForm() {
                             </textarea>
                         </div>
                         <div className="button-container">
-                            <a type="submit" className="btn btn-primary" href={`mailto:w@w.us?subject=Message from ${props.name}: ${props.subject}&body=${props.message}`}>Mail Me</a>
+                            <a type="submit" className="main-button" href={`mailto:dmitrii.zverev.us@gmail.com?subject=Message from ${state.name}: ${state.subject}&body=${state.message}`}>MAIL ME</a>
                         </div>
                     </form>
                 </div>
             </div>
+            <div className="col-sm-1 contacts">
+                <ContactBar/>
+            </div>
+        </div>
     );
 }
 
