@@ -1,11 +1,11 @@
 .main-text {
     color: white;
     font-family: 'Bellota Text', cursive;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .greeting {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: right;
     display: block;
@@ -13,10 +13,14 @@
 
 .summary {
     line-height: 2em;
-    max-width: 75%;
+    max-width: 80%;
     float: right;
     text-align: right;
     display: block;
+    
+}
+.summary .tech-list{
+    margin-top: .5em;
 }
 
 .fa-js{
@@ -31,12 +35,44 @@
     color: #68A063;
 }
 
+.dev-icons {
+    padding-left: 0;
+    list-style: none;
+    /* font-size: 1em; */
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: right;
+}
+.software-skill-inline {
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    }
+.dev-icons div {
+    font-size: 0.7em;
+}
+
+.dev-icons i {
+    color: white;
+}
+
+.dev-icons i.mng{
+    color: black;
+    background-color: white;
+    padding: .1em .2em;
+    border-radius: 2px;
+}
+
 @media (max-width: 576px){
     .summary {
-        font-size: 1em;
+        /* font-size: 1em; */
         line-height: 1.5em;
     }
-    .greeting-text {
-        font-size: 1.2em;
+    /* .greeting-text {
+        font-size: 1em;
+    } */
+    .main-text {
+        font-size: 1em;
     }
 }

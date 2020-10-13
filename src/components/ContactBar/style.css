@@ -1,12 +1,12 @@
 .list-socials {
-    position: absolute;
+    /* position: absolute; */
     margin: auto;
-    height: 15em;
-    width: inherit;
-    top:50%; 
+    height: auto;
+    /* width: inherit;
+    top:50%;  */
     /* margin-top:-5em; */
     list-style: none;
-    margin-top: -7.5em;
+    /* margin-top: -7.5em; */
     /* display: none; */
 }
 .icon {

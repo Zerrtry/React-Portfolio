@@ -1,25 +1,26 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import Button from '../Button'
 import './style.css';
 
 function ButtonsOnlend() {
   return (
     <div className="buttons-on-lend">
-        <div>
-          <Link className="main-button"
-            to="/contact"
-          >
-            CONTACT ME
-          </Link>
-        </div>
-        <div>
-            <a className="main-button" 
-            href="https://drive.google.com/file/d/1GP_UUsnWkarrLvDJSESGCXDuV57IQVkt/view?usp=sharing" 
-            rel="noopener noreferrer" 
-            target="_blank">
-              MY RESUME
-            </a>
-        </div>
+      <div>
+        <Link to="/contact">
+          <Button>CONTACT ME</Button>
+        </Link>
+      </div>
+      <div>
+        <a
+          href="https://drive.google.com/file/d/1GP_UUsnWkarrLvDJSESGCXDuV57IQVkt/view?usp=sharing" 
+          rel="noopener noreferrer" 
+          target="_blank">
+          <Button>
+            MY RESUME 
+          </Button>
+        </a>
+      </div>
     </div>
   );
 }
