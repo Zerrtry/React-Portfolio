@@ -68,6 +68,7 @@
     .summary {
         /* font-size: 1em; */
         line-height: 1.5em;
+        max-width: 100%;
     }
     /* .greeting-text {
         font-size: 1em;

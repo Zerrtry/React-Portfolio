@@ -3,7 +3,7 @@ import './style.css';
 
 function Header() {
   return (
-    <div className="row header">
+    <div className="row flex-fill d-flex justify-content-center">
         <div className="col-sm">
             <div className="topBar">
                 <div className="name">

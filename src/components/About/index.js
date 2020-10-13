@@ -20,13 +20,13 @@ function About() {
           <div className="tech-list">
             Here are some of technologies I'm familiar with.
             <ul className="dev-icons">
-              <li className="software-skill-inline" name="html-5">
-                <i className="fab fa-html5"></i>
-                <div>html-5</div>
-              </li>
               <li className="software-skill-inline" name="css3">
                 <i className="fab fa-css3-alt"></i>
                 <div>css3</div>
+              </li>
+              <li className="software-skill-inline" name="html-5">
+                <i className="fab fa-html5"></i>
+                <div>html-5</div>
               </li>
               <li className="software-skill-inline" name="css3">
                 <i className="fab fa-js"></i>

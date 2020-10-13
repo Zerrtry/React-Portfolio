@@ -15,11 +15,13 @@ function Footer() {
   const timeC = () => Moment().format('	HH:mm:ss.S');
     
   return (
-    <div className="row foot">
+    <div className="row flex-fill d-flex justify-content-center">
       <div className="col-sm">
+        <div className="foot">
           <div className="clock">
             <span> { time }</span>
           </div>
+        </div>  
       </div>
     </div>
 

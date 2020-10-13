@@ -1,7 +1,7 @@
 .topBar {
    display: list-item;
    font-family: 'Baloo Tammudu 2', cursive;
-   padding-top: 1em;
+   padding-top: 1.5em;
    font-size: 1.5em;
    background-color: white;
 }
@@ -46,7 +46,7 @@
    }
 
    .topBar {
-      padding-top: 1.5em;
+      padding-top: .5em;
    }
 }
 
