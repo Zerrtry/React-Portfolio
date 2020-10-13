@@ -4,7 +4,6 @@
    font-family: 'Baloo Tammudu 2', cursive;
    padding-top: 1.5em;
    font-size: 1.5em;
-   
 }
 
 .col-sm.header .name {
@@ -45,13 +44,13 @@
       margin-right: 0.5em;
    }
 
-   .header {
+   .col-sm.header {
       padding-top: .5em;
    }
 }
 
 @media (max-height: 415px){
-   .header {
+   .col-sm.header {
       display: none;
    }
 }

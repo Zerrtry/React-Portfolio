@@ -66,14 +66,13 @@
 
 @media (max-width: 576px){
     .summary {
-        /* font-size: 1em; */
         line-height: 1.5em;
-        max-width: 100%;
+        max-width: 90%;
     }
     /* .greeting-text {
         font-size: 1em;
     } */
     .main-text {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 }

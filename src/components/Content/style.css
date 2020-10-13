@@ -25,9 +25,6 @@
 .contacts {
     background-color: white;
     max-width: 3.5em;
-    /* float: right;
-     */
-    position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -35,8 +32,8 @@
 
 
 @media (max-width: 576px){
-    .content-conteiner {
-        padding: 1em 0.5em 1em 0;
+    .col-sm .content-conteiner {
+        padding: 1em .5em;
     } 
     .contacts,
     .toggleBar {
@@ -44,6 +41,7 @@
     }
     .contacts-hidden{
         display: inline-flex;
-        margin-top: 2em;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
     }
 }

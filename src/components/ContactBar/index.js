@@ -19,7 +19,7 @@ function ContactBar() {
                 <i className="fab fa-stack-overflow" aria-hidden="true"></i>
             </a>
         </li>
-    </ul>
+    </ul> 
   );
 }
 
