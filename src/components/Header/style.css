@@ -1,17 +1,18 @@
-.topBar {
+.col-sm.header {
+   background: white;
    display: list-item;
    font-family: 'Baloo Tammudu 2', cursive;
    padding-top: 1.5em;
    font-size: 1.5em;
-   background-color: white;
+   
 }
 
-.name {
+.col-sm.header .name {
    float: left;
    margin-left: 2.5em;
 }
 
-.langToggle {
+.col-sm.header .langToggle {
    float: right;
    margin-right: 2.5em;
 } 
@@ -33,19 +34,18 @@
 
 .switch-lang li {
    display: inline-block;
-   margin-left: 3px;
 }
 
 @media (max-width: 576px){
-   .name {
+   .col-sm.header .name {
       margin-left: 0.5em;
    }
    
-   .langToggle {
+   .col-sm.header .langToggle {
       margin-right: 0.5em;
    }
 
-   .topBar {
+   .header {
       padding-top: .5em;
    }
 }

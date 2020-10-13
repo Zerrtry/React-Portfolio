@@ -12,14 +12,11 @@
 .icon {
     /* margin: auto; */
     padding: 1em 0.2em;
-}
-
-a{
     margin: auto;
     display: block;
-    color: black;
     font-size: 1.8em;
     text-align: center;
+    color: black;
 }
 
 i{

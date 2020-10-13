@@ -16,8 +16,8 @@ function Footer() {
     
   return (
     <div className="row flex-fill d-flex justify-content-center">
-      <div className="col-sm">
-        <div className="foot">
+      <div className="col-sm footer">
+        <div>
           <div className="clock">
             <span> { time }</span>
           </div>

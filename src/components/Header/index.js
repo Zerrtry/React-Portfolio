@@ -4,8 +4,8 @@ import './style.css';
 function Header() {
   return (
     <div className="row flex-fill d-flex justify-content-center">
-        <div className="col-sm">
-            <div className="topBar">
+        <div className="col-sm header">
+            <div>
                 <div className="name">
                     <span> 	&lt; </span>  
                         Dmitrii Zverev 
@@ -13,9 +13,9 @@ function Header() {
                 </div>
                 <div className="langToggle">
                     <ul className="switch-lang hidden-sm-down">
-                        <li className="active">EN</li>
-                        <li>||</li>
-                        <li className="active">RU</li>
+                        <li className="lang-active">EN</li>
+                        <li className="splitter">||</li>
+                        <li className="lang-disactive">RU</li>
                     </ul>
                 </div>
             </div>

@@ -10,7 +10,7 @@
     text-decoration: none;
     cursor: pointer;
     font-family: 'Baloo Tammudu 2', cursive;
-    font-size: .7em;
+    font-size: 1.2em;
     width: fit-content;
     max-width: 7em;
 }
@@ -23,7 +23,7 @@
     transition: all 0.3s ease-in-out 0s;
 }
 
-/* .main-button:active {
+.main-button:active {
     border: 1px solid rgba(255, 255, 255, 0.9);
     box-shadow: 0px 2px 7px 2px rgb(255, 255, 255);
     transform: translateY(2px);
@@ -31,10 +31,20 @@
     background-color: #56198be1;
     color: rgb(255, 255, 255);
     text-decoration: none;
-  } */
+  }
+
+  .main-button:focus {
+    border: 1px solid white;
+    box-shadow:none;
+    transform: translateY(2px);
+    transition: all 0s ease-in-out 0s;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
 
 @media (max-width: 576px){
     .main-button {
-        font-size: .5em;
+        font-size: 1em;
     }
 }

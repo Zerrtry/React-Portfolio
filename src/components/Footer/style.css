@@ -1,31 +1,28 @@
-.foot {
+.col-sm.footer {
   background: white;
   font-family: 'Baloo Tammudu 2', cursive;
-  height: inherit;
-  max-height: 3em;
-  padding: .5em;
+  /* height: inherit; */
+  /* max-height: 3em; */
+  padding-top: .5em;
   font-size: 1.5em;
-
-  background-color: white;
-  display: flex;
+  /* display: flex; */
   align-items: center;
 }
 
-.foot .clock {
+.col-sm.footer .clock {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 4em;
 }
 
 @media (max-width: 576px){
-  .foot{
+  .col-sm.footer {
       padding:  0.5em 0em;
   }
 } 
 
 @media (max-height: 415px){
-  .foot {
+  .col-sm.footer {
      display: none;
   }
 }

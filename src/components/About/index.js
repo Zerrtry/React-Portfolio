@@ -26,7 +26,7 @@ function About() {
               </li>
               <li className="software-skill-inline" name="html-5">
                 <i className="fab fa-html5"></i>
-                <div>html-5</div>
+                <div>html5</div>
               </li>
               <li className="software-skill-inline" name="css3">
                 <i className="fab fa-js"></i>
