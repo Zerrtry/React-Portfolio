@@ -16,7 +16,7 @@ function About() {
         &amp;&amp;
         <span name="Node"> <i className="fab fa-node" title="Node.js"></i> </span>
         and some other libraries and frameworks. 
-        I'm constantly seeking to further develop my programming skills and gain experience. I want to help bring ideas to life for serving people.
+        I'm constantly seeking to further develop my programming skills and gain experience. My goal is to help bring your ideas to life.
           <div className="tech-list">
             Here are some of technologies I'm familiar with.
             <ul className="dev-icons">

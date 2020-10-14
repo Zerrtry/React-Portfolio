@@ -16,13 +16,15 @@ function ContactForm() {
 
     return (
         <div className="row flex-fill d-flex justify-content-center">
-            <div className="col-sm-1 toggleBar">
-                <div className="back-button">
-                    <Link to="/">
-                        <div className="github" title="Back" href="#">
-                            <i className="fas fa-arrow-circle-left"></i>
-                        </div>
-                    </Link>
+            <div className="col-sm-1half">
+                <div className="toggleBar">
+                    <div className="back-button-container">
+                        <Link to="/" title="Home">
+                            <div className="github" >
+                                <i className="fas fa-arrow-circle-left"></i>
+                            </div>
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div className="col-sm">
@@ -51,9 +53,8 @@ function ContactForm() {
                                 placeholder="Please write your message here" 
                             />
                         </div>
-                        <div className="button-container">
+                        <div className="mail-button-container">
                             <a 
-                                type="submit" 
                                 href={`mailto:dmitrii.zverev.us@gmail.com?subject=Portfolio: ${state.subject}&body=${state.message}`}>
                                 <Button>
                                    MAIL ME 
@@ -63,8 +64,10 @@ function ContactForm() {
                     </form>
                 </div>
             </div>
-            <div className="col-sm-1 contacts">
-                <ContactBar/>
+            <div className="col-sm-1half">
+                <div className="contacts">
+                    <ContactBar/>
+                </div>      
             </div>
         </div>
     );

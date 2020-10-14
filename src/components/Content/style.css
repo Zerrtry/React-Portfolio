@@ -1,47 +1,58 @@
+.col-sm-1half {
+    width: 4em;
+}
+
 .toggleBar {
-    max-width: 3.5em;
     background-color: white;
-    position: relative
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .content-conteiner {
-    /* margin: auto; */
     display: flex;
-    flex-direction: column;
-    /* padding: 0 2em; */
-    /* position: relative; */
     justify-content: center;
-    /* align-items: center; */
     height: 100%;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 2.5em 1em;
+    padding: 2.5em;
 }
 
 .contacts-hidden{
     display: none;
 }
 
-.contacts {
-    background-color: white;
-    max-width: 3.5em;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+.toggleBar-hidden{
+    display: none;
 }
 
+.contacts {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 @media (max-width: 576px){
+
     .col-sm .content-conteiner {
-        padding: 1em .5em;
+        padding: .5em .5em 2em .5em;
     } 
-    .contacts,
-    .toggleBar {
+    #leftBar,
+    #rightBar {
         display: none;
+    }
+
+    .toggleBar-hidden{
+        display: block;
+        position: fixed;
+        top: 4.5em;
+        left: 0;
     }
     .contacts-hidden{
         display: inline-flex;
-        margin-top: 1.5em;
+        margin-top: .5em;
         margin-bottom: 1em;
+        padding: 0;
     }
 }

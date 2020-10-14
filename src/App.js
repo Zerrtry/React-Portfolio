@@ -7,6 +7,7 @@ import Content from './components/Content';
 import Footer from './components/Footer';
 import SideBar from './components/SideBar';
 import ContactForm from './components/ContactForm';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
 
   return (
     <Router>
-      
+      <ScrollToTop />
         <SideBar toggleState={toggleState}>
             <Header/>
             {/* <Content toggleSideBar={toggleSideBarState}/> */}
@@ -38,7 +39,6 @@ function App() {
             /> */}
             <Footer/>
         </SideBar>
-      
     </Router>
   );
 }

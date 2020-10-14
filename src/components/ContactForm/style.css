@@ -1,23 +1,23 @@
+.back-button-container {
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    height: 4em;
+    margin-bottom: 0;
+    margin-top: -2em;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 div.content-conteiner div.main-text{
     text-align: right;
-    
 }
-.button-container {
-    justify-content: center;
-    
-}
+
 form {
     justify-content: center;
 }
-
-form .button-container {
-    margin-top: 2em;
-}
-
-/* .main-button {
-    width: 5em;
-    margin: auto;
-} */
 
 .form-group {
     max-width: 35rem;
@@ -26,40 +26,10 @@ form .button-container {
     margin-left: auto;
 }
 
-div.content-conteiner {
-    /* margin: auto; */
+.mail-button-container {
     display: flex;
-    flex-direction: column;
-    /* padding: 0 2em; */
-    /* position: relative; */
     justify-content: center;
-    /* align-items: center; */
-    height: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 2.5em 1em;
-    width: initial
-}
-
-.toggleBar {
-    height: 100%;
-    /* width: inherit;
-    padding: 0; */
-    display: flex;
-    flex-direction: column;
-}
-
-.back-button{
-    margin: auto;
-    font-size: 1em; 
-}
-
-.contacts {
-    background-color: white;
-    max-width: 3.5em;
-    /* float: right;
-    height: 100%; */
-    position: relative;
+    margin-top: 2em;
 }
 
 @media (max-width: 576px){
@@ -70,4 +40,5 @@ div.content-conteiner {
     .toggleBar {
         display: none;
     }
+    
 }

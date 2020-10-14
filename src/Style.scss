@@ -9,12 +9,12 @@
     // overflow: hidden;
   }  
   
-  #root{
-    height: 100%;
-  }
+  // #root{
+  //   height: 100%;
+  // }
 
   body,
-  .content {
+  #content {
     background:
       linear-gradient(27deg, 
         #151515 5px, 
@@ -52,10 +52,12 @@
   }
 
   a:hover {
-    text-decoration: none;
+    text-decoration: inherit;
     color: inherit;
   }
 
   a{
     color: inherit;
+    text-decoration: inherit;
 }
+
