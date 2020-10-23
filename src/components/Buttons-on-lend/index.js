@@ -2,13 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../Button'
 import './style.css';
+import {useLanguage} from '../../utils/LngContext'
 
 function ButtonsOnlend() {
+  const activeLanguage = useLanguage()
   return (
     <div className="buttons-on-lend">
       <div>
         <Link to="/contact">
-          <Button>CONTACT ME</Button>
+          <Button>
+            {activeLanguage.contactMe}
+          </Button>
         </Link>
       </div>
       <div>
@@ -17,7 +21,7 @@ function ButtonsOnlend() {
           rel="noopener noreferrer" 
           target="_blank">
           <Button>
-            MY RESUME 
+            {activeLanguage.myResume} 
           </Button>
         </a>
       </div>

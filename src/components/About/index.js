@@ -1,24 +1,24 @@
 import React from 'react';
 import './style.css';
+import {useLanguage} from '../../utils/LngContext'
 
 function About() {
+  const activeLanguage = useLanguage()
   return (
     <div className="main-text">
         <div className="greeting"> 
-        Hi, I'm Dmitrii.
+        {activeLanguage.grettingTitle}
         </div>
         <div className="summary">
-        I'm a motivated Full Stack Web Developer with a Certificate from Northwestern University School of Professional Studies. 
-        My experience includes building Web applications with 
+        {activeLanguage.about1st}
         <span name="JavaScript"> <i className="fab fa-js" title="JavaScript"></i> </span>
         &amp;&amp; 
         <span name="React"> <i className="fab fa-react" title="React.js"></i> </span> 
         &amp;&amp;
         <span name="Node"> <i className="fab fa-node" title="Node.js"></i> </span>
-        and some other libraries and frameworks. 
-        I'm constantly seeking to further develop my programming skills and gain experience. My goal is to help bring your ideas to life.
+        {activeLanguage.about2nd}
           <div className="tech-list">
-            Here are some of technologies I'm familiar with.
+            {activeLanguage.skillset}
             <ul className="dev-icons">
               <li className="software-skill-inline" name="css3">
                 <i className="fab fa-css3-alt"></i>

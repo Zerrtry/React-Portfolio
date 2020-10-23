@@ -8,38 +8,37 @@ import Footer from './components/Footer';
 import SideBar from './components/SideBar';
 import ContactForm from './components/ContactForm';
 import ScrollToTop from './components/ScrollToTop';
+import { LngProvider } from './utils/LngContext/languageProvider'
+
 
 function App() {
 
-  const [toggleState, setToggleState] = useState (false)
-  
-  const toggleSideBarState = ()=>{
+  const [sideBarState, setSideBarState] = useState(false)
+
+  const toggleSideBarState = () => {
     console.log("toggleSideBarShowed")
-    setToggleState(!toggleState)
+    setSideBarState(!sideBarState)
   }
 
   return (
-    <Router>
-      <ScrollToTop />
-        <SideBar toggleState={toggleState}>
-            <Header/>
-            {/* <Content toggleSideBar={toggleSideBarState}/> */}
-            <Route 
-              exact path="/"
-              render={(props) => (
-                <Content {...props} toggleSideBar={toggleSideBarState}/>
-              )}
-            />
-            <Route 
-              exact path="/contact"
-              component = {ContactForm}
-                // <ContactForm {...props} toggleSideBar={toggleSideBarState}
-            />
-              {/* )} 
-            /> */}
-            <Footer/>
+
+    <LngProvider>
+      <Router>
+        <ScrollToTop />
+        <SideBar toggleState={sideBarState}>
+          <Header />
+          <Route
+            exact path="/"
+            render={(props) => (
+              <Content {...props} toggleSideBar={toggleSideBarState}/>
+            )}/>
+          <Route
+            exact path="/contact"
+            component={ContactForm}/>
+          <Footer />
         </SideBar>
-    </Router>
+      </Router>
+    </LngProvider>
   );
 }
 

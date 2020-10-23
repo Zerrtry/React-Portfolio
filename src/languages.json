@@ -1,0 +1,40 @@
+[
+    {   
+        "language":"EN",
+        "name": "Dmitrii Zverev",
+        "enAbbriviation": "En",
+        "ruAbriviation": "Ru",
+        "grettingTitle": "Hi, I'm Dmitrii.",
+        "about1st":   "I'm a motivated Full Stack Web Developer with a Certificate from Northwestern University School of Professional Studies. My experience includes building Web applications with",
+        "about2nd": "and some other libraries and frameworks. I'm constantly seeking to further develop my programming skills and gain experience. My goal is to help bring your ideas to life.",
+        "skillset": "Here are some of technologies I'm familiar with.",
+        "contactMe": "CONTACT ME",
+        "myResume": "MY RESUME",
+        "mailMe": "MAIL ME",
+        "projects": "Projects",
+        "Home": "Home",
+        "subject": "Subject of Your Email", 
+        "message":"Please write your message here",
+        "gitHubRepo": "GitHub REPO",
+        "webSite": "WEB SITE"
+        },
+    {
+        "language":"RU",
+        "name": "Дмитрий Зверев",
+        "enAbbriviation": "Ан",
+        "ruAbriviation": "Ру",
+        "grettingTitle": "Здравствуйте, я Дмитрий Зверев.",
+        "about1st":   "Я целеустремленный Full Stack разработчик получивший сертификат Школы Профессиональной подготовки Университета Норсвестерн, Чикаго Иллинойс. Мой опыт включает разработку интернет-приложений с приминением",
+        "about2nd": "и других библиотек и платформ. Стремлюсь к дальнейшему развитию навыков программирования и приобретению нового опыта. Открыт для любых предложений на предмет сотрудничества по разработке интернет-приложений. Моя цель это помочь воплотить Ваши идеи в жизнь.",
+        "skillset": "Вот некоторые из технологий с которыми я знаком:",
+        "contactMe": "КОНТАКТЫ",
+        "myResume": "МОЁ РЕЮМЕ",
+        "mailMe": "ОТПРАВИТЬ",
+        "projects": "Проекты",
+        "Home": "Домой",
+        "subject": "Тема Вашего письма", 
+        "message":"Пожалуйста, напишите Ваше сообщение здесь",
+        "gitHubRepo": "GitHub REPO",
+        "webSite": "WEB SITE"
+    }
+]

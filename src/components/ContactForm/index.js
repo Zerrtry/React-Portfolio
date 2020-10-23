@@ -3,9 +3,10 @@ import ContactBar from '../ContactBar';
 import Button from '../Button';
 import { Link } from "react-router-dom";
 import './style.css';
+import {useLanguage} from '../../utils/LngContext'
 
 function ContactForm() {
-   
+    const activeLanguage = useLanguage()
     const [state, setState] = useState({})
     const handleInputChange = event => {
         event.preventDefault();
@@ -13,13 +14,12 @@ function ContactForm() {
         const name = event.target.name;
         setState({...state, [name]: value});
     };
-
     return (
         <div className="row flex-fill d-flex justify-content-center">
             <div className="col-sm-1half">
                 <div className="toggleBar">
                     <div className="back-button-container">
-                        <Link to="/" title="Home">
+                        <Link to="/" title={activeLanguage.Home}>
                             <div className="github" >
                                 <i className="fas fa-arrow-circle-left"></i>
                             </div>
@@ -31,33 +31,31 @@ function ContactForm() {
                 <div className="content-conteiner">
                     <form>
                         <div className="form-group">
-                            <div className="main-text">Thanks for taking the time to reach out.</div>
+                            <div className="main-text">{activeLanguage.grettingContact} </div>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">Subject</label>
                             <input 
                                 type="text" 
                                 className="form-control"
                                 onChange={handleInputChange}
                                 name="subject"
-                                placeholder="Subject of Your Email" 
+                                placeholder={activeLanguage.subject} 
                             />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="exampleFormControlTextarea1">Message</label>
                             <textarea 
                                 className="form-control"
                                 rows="6"
                                 onChange={handleInputChange}
                                 name="message"
-                                placeholder="Please write your message here" 
+                                placeholder={activeLanguage.message} 
                             />
                         </div>
                         <div className="mail-button-container">
                             <a 
                                 href={`mailto:dmitrii.zverev.us@gmail.com?subject=Portfolio: ${state.subject}&body=${state.message}`}>
                                 <Button>
-                                   MAIL ME 
+                                    {activeLanguage.mailMe} 
                                 </Button>
                             </a>
                         </div>

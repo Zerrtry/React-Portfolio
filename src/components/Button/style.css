@@ -1,18 +1,16 @@
 .main-button {
     border: 1px solid white;
     color: #fff;
-    padding-top: 0.6em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+    padding: .2em;
     margin: auto;
     border-radius: 6px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    font-family: 'Baloo Tammudu 2', cursive;
-    font-size: 1.2em;
+    font-family: 'Bellota Text', cursive;
+    font-size: 1.1em;
     width: fit-content;
-    max-width: 7em;
+    max-width: 7.5em;
 }
 .main-button:hover { 
     background-color: #56198b8f;

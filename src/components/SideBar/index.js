@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style.css';
 import Card from '../Card';
 import projects from '../../projects.json';
 
 function SideBar(props) {
-
   const visable = props.toggleState ? 'opened' : 'closed';
-  const [projectsObj, setProjectsObj] = useState ({projects})
-  console.log("projectsObj",projectsObj)
-
+  const projectsObj = projects
   return (
     <div className="wrapper">
       <nav id="sidebar" className={visable}>
@@ -19,7 +16,7 @@ function SideBar(props) {
             <span> /&gt;</span>
           </div>
           <ul className="projects-list">
-            {projectsObj.projects.map(project => (
+            {projectsObj.map(project => (
               <Card
                 key={project.id}
                 image={project.image}
