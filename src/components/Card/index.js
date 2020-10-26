@@ -3,7 +3,7 @@ import "./style.css";
 
 function Card(props) {
   return (
-    <li>
+    // <li>
       <div className="card" key={props.name}>
         <div className="img-container">
           <img alt={props.name} src={props.image} />
@@ -30,7 +30,7 @@ function Card(props) {
           </ul> */}
         </div>
       </div>
-    </li>
+    // </li>
   );
 }
 

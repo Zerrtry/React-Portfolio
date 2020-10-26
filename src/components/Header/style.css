@@ -1,7 +1,6 @@
 .col-sm .header {
    background-color: white;
    display: list-item;
-   font-family: 'Bellota Text', cursive;
    font-size: 1.4em;
    height: 100%;
 }
@@ -48,20 +47,23 @@ li.active-lng{
 }
 
 .toggle-head:hover {
-   color: black;
+   color:#520099;
    background: transparent;
    text-decoration: none;
    outline: none;
    cursor: pointer;
-   font-weight: 600;
+   text-shadow: 0px .5px .5px #520099;
+   transform: translateY(-3px);
 }
 
 .toggle-head:active {
    background-color: transparent;
-   color:  black;
-   transform: translateY(2px);
+   color:  #520099;
+   transform: translateY(0px);
    transition: all 0s ease-in-out 0s;
    outline: none;
+   text-shadow: 0px .5px .5px #520099;
+
  }
 
  .toggle-head.focus {
@@ -117,7 +119,7 @@ li.active-lng{
        text-shadow: none;
        background-color: white;
        color:  black;
-       border: 1px solid white;
+       /* border: 1px solid white; */
        outline: none;
    }
  }

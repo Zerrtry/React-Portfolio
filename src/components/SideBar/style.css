@@ -4,8 +4,6 @@
     height: 100%;
     align-items: stretch;
     height: 100vh;
-    /* float: left;
-    display: block; */
 }
 
 #content{
@@ -17,10 +15,11 @@
     position: fixed;
     top: 0;
     left: 0; */
+    /* padding-top: 3em; */
     height: 100vh;
-    width: 280px;
+    width: 100%;
     /* max-width: 25%; */
-    margin-left: -280px;
+    margin-left: -100%;
     /* max-width: 3.5em;
     min-width: 3.5em; */
     /* min-height: 100vh; */
@@ -28,13 +27,15 @@
     /* top: 0; */
     left: 0;
     z-index: 9999;
-    background: transparent;
+    /* background: rgba(255, 255, 255, 0.185); */
+    /* backdrop-filter: blur(1px); */
     /* top layer */
     transition: all 0.3s;
 }
 
 #sidebar.opened {
-    margin-left: 2.5em;
+    margin-left: 3.5em;
+    /* margin-right: 4em; */
 }
 
 /* Toggling the sidebar header content, hide the big heading [h3] and showing the small heading [strong] and vice versa*/
@@ -50,9 +51,8 @@
     background: transparent;
     display: block;
     font-size: 1.5em;
-    font-family: 'Baloo Tammudu 2', cursive;
     color: white;
-    padding-left: 3.5em;
+    padding-left: 3em;
     transition: all 0.3s;
 }
 #sidebar.opened .sidebar-header ul.projects-list{
@@ -191,5 +191,20 @@
         -webkit-transform: translateX(50%);
         -ms-transform: translateX(50%);
         transform: translateX(50%);
+    }
+
+    @media (max-width: 576px){
+        /* #sidebar{
+            
+        } */
+
+        #sidebar.opened {
+            margin-left: 0;
+        }
+
+        #sidebar.opened .sidebar-header {
+            padding-left: .5em;
+            color: black;background-color: white;
+        }
     }
 }

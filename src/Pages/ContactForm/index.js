@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ContactBar from '../ContactBar';
-import Button from '../Button';
+// import ContactBar from '../ContactBar';
+import Button from '../../components/Button';
 import { Link } from "react-router-dom";
 import './style.css';
 import {useLanguage} from '../../utils/LngContext'
@@ -15,20 +15,27 @@ function ContactForm() {
         setState({...state, [name]: value});
     };
     return (
-        <div className="row flex-fill d-flex justify-content-center">
-            <div className="col-sm-1half">
-                <div className="toggleBar">
-                    <div className="back-button-container">
+        // <div className="row flex-fill d-flex justify-content-center">
+        //     <div className="col-sm-1half">
+        //         <div className="toggleBar">
+        //             <div className="back-button-container">
+        //                 <Link to="/" title={activeLanguage.Home}>
+        //                     <div className="github" >
+        //                         <i className="fas fa-arrow-circle-left"></i>
+        //                     </div>
+        //                 </Link>
+        //             </div>
+        //         </div>
+        //     </div>
+        //     <div className="col-sm">
+                <div className="content-conteiner">
+                    {/* <div className="back-button-container">
                         <Link to="/" title={activeLanguage.Home}>
                             <div className="github" >
                                 <i className="fas fa-arrow-circle-left"></i>
                             </div>
                         </Link>
-                    </div>
-                </div>
-            </div>
-            <div className="col-sm">
-                <div className="content-conteiner">
+                    </div> */}
                     <form>
                         <div className="form-group">
                             <div className="main-text">{activeLanguage.grettingContact} </div>
@@ -61,13 +68,13 @@ function ContactForm() {
                         </div>
                     </form>
                 </div>
-            </div>
-            <div className="col-sm-1half">
-                <div className="contacts">
-                    <ContactBar/>
-                </div>      
-            </div>
-        </div>
+        //     </div>
+        //     <div className="col-sm-1half">
+        //         <div className="contacts">
+        //             <ContactBar/>
+        //         </div>      
+        //     </div>
+        // </div>
     );
 }
 

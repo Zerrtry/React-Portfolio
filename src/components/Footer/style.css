@@ -1,6 +1,5 @@
 .col-sm .downBar {
   background-color: white;
-  font-family: 'Baloo Tammudu 2', cursive;
   height: 100%;
   min-height: 2.5em;
   padding-top: .5em;
@@ -14,31 +13,11 @@
   width: 4.5em;
 }
 
-/* .contacts-hidden{
-  display: none;
-} */
-
 @media (max-width: 576px){
   .col-sm .downBar {
-      /* padding:  0.5em 0em; */
       display: none;
   }
-  /* .contacts-hidden{
-    display: contents;
-    justify-content: space-between;
-     margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-  }
-   .contacts-hidden .icon {
-    font-size: 1.5em;
-    padding: 0;
-    height: 1em;
-  }
-  .col-sm .downBar .clock {
-    display: none;
-  } */
-} 
+ } 
 
 @media (max-height: 415px){
   .col-sm .downBar {

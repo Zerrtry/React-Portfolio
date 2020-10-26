@@ -9,15 +9,15 @@ function ButtonsOnlend() {
   return (
     <div className="buttons-on-lend">
       <div>
-        <Link to="/contact">
-          <Button>
-            {activeLanguage.contactMe}
+        <Link to="/projects">
+          <Button id="projects">
+            {activeLanguage.projects}
           </Button>
         </Link>
       </div>
       <div>
         <a
-          href="https://drive.google.com/file/d/1GP_UUsnWkarrLvDJSESGCXDuV57IQVkt/view?usp=sharing" 
+          href="https://drive.google.com/file/d/166eil1OVWZcjmYPs7-s6PpJO4J98FyUQ/view?usp=sharing" 
           rel="noopener noreferrer" 
           target="_blank">
           <Button>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {useLanguage} from '../../utils/LngContext'
 
 import './style.css';
@@ -8,13 +9,14 @@ function ToggleBar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
-        <button 
-          className="toggle" 
-          id="sidebarCollapse" 
-          title={activeLanguage.projects} 
-          onClick={props.toggleSideBar}>
-          <i className="fas fa-folder-open"></i>
-        </button>
+        <Link to="/projects">
+          <button 
+            className="toggle" 
+            title={activeLanguage.projects} >
+            {/* onClick={props.toggleSideBar}> */}
+            <i className="fas fa-folder-open"></i>
+          </button>
+        </Link>
       </div>
     </nav>
   );

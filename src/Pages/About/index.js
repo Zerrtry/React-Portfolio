@@ -1,22 +1,27 @@
 import React from 'react';
 import './style.css';
 import {useLanguage} from '../../utils/LngContext'
+import ContactBar from '../../components/ContactBar';
+import ButtonsOnlend from '../../components/Buttons-on-lend';
 
 function About() {
   const activeLanguage = useLanguage()
   return (
-    <div className="main-text">
+    <div className="content-conteiner">
+      <div className="main-text">
         <div className="greeting"> 
         {activeLanguage.grettingTitle}
         </div>
         <div className="summary">
-        {activeLanguage.about1st}
-        <span name="JavaScript"> <i className="fab fa-js" title="JavaScript"></i> </span>
-        &amp;&amp; 
-        <span name="React"> <i className="fab fa-react" title="React.js"></i> </span> 
-        &amp;&amp;
-        <span name="Node"> <i className="fab fa-node" title="Node.js"></i> </span>
-        {activeLanguage.about2nd}
+          <p>{activeLanguage.about1st}
+            <span name="bootstrap"> <i className="fab fa-bootstrap" title="bootstrap"></i> </span>
+            &amp;&amp; 
+            <span name="React"> <i className="fab fa-react" title="React.js"></i> </span> 
+            &amp;&amp;
+            <span name="Node"> <i className="fab fa-node" title="Node.js"></i> </span>
+            {activeLanguage.about2nd}
+          </p>
+          <p>{activeLanguage.about3nd}</p>
           <div className="tech-list">
             {activeLanguage.skillset}
             <ul className="dev-icons">
@@ -27,6 +32,10 @@ function About() {
               <li className="software-skill-inline" name="html-5">
                 <i className="fab fa-html5"></i>
                 <div>html5</div>
+              </li>
+              <li className="software-skill-inline" name="bootstrap">
+                <i class="fab fa-bootstrap"></i>
+                <div>bootstrap</div>
               </li>
               <li className="software-skill-inline" name="css3">
                 <i className="fab fa-js"></i>
@@ -62,8 +71,12 @@ function About() {
               </li>
             </ul>
           </div>
-
         </div>
+      </div>
+      <div className="contacts-hidden">
+        <ContactBar/>
+      </div>
+      <ButtonsOnlend/>
     </div>
   );
 }

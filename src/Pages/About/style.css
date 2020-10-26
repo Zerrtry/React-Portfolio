@@ -1,19 +1,17 @@
 .main-text {
     color: white;
-    font-family: 'Bellota Text', cursive;
     font-size: 1.3em;
 }
 
 .greeting {
     font-size: 1.5em;
-    font-weight: bold;
     text-align: right;
     display: block;
 }
 
 .summary {
     line-height: 2em;
-    max-width: 80%;
+    max-width: 75%;
     float: right;
     text-align: right;
     display: block;
@@ -23,8 +21,8 @@
     margin-top: .5em;
 }
 
-.fa-js{
-    color: #F0DB4F;
+.fa-bootstrap{
+    color: #7f57bd;
 }
 
 .fa-react{
@@ -70,5 +68,10 @@
     }
     .main-text {
         font-size: 1.2em;
+        margin-top: 3em;
+    }
+    .greeting {
+        width: 75%;
+        float: right;
     }
 }
