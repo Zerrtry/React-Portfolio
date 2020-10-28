@@ -26,13 +26,6 @@ function Content() {
         <Route 
           exact path="/"
           component={About}/>
-        {/* <div className="content-conteiner">
-          <About/> 
-          <div className="contacts-hidden">
-            <ContactBar/>
-          </div>
-          <ButtonsOnlend/>
-        </div> */}
         <Route 
           exact path="/projects"
           component={Projects}/>

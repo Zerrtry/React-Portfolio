@@ -72,7 +72,6 @@
     .list-socials{
         display: inline-flex;
         justify-content: space-evenly;
-        /* font-size: 1.2em; */
         width: 100%;
         position: unset;
         margin: auto;
@@ -130,5 +129,4 @@
         color: #f48024;
         text-shadow: none;
     }
-
 }

@@ -13,7 +13,7 @@ function ToggleBar(props) {
           <button 
             className="toggle" 
             title={activeLanguage.projects} >
-            {/* onClick={props.toggleSideBar}> */}
+            onClick={props.toggleSideBar}
             <i className="fas fa-folder-open"></i>
           </button>
         </Link>

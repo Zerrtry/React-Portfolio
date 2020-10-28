@@ -17,7 +17,36 @@ export const lngEN = {
     subject: "Subject of Your Email", 
     message:"Please write your message here",
     gitHubRepo: "GitHub REPO",
-    webSite: "WEB SITE"
+    webSite: "WEB SITE",
+    projectsArr: [
+        {
+          id: 1,
+          name: "Canine Cupid",
+          discription:"Full-stack web application getting together dog owners seeking of new friends for their lovely pets.",
+          image: "images/canine-cupid-2-0.gif",
+          tech: "React, Bootstarp, AXIOS, Mapbox-cli API, Github, AWS-S3, Node.js, Express.js, mongoose, bcrypt, MongoDB, MongoDB Atlas, Heroku, Travis CI, jest",
+          github: "https://github.com/Zerrtry/Project-3-Canine-Cupid-Front-End",
+          deployed: "http://canine-cupid-2-0.s3-website.us-east-2.amazonaws.com"
+        },
+        {
+          id: 2,
+          name: "Book Club",
+          discription:"Web application which allows participants to read books, review books, buy books, and look at other reviews of the books to make their reading decisions.",
+          image: "images/book-club.gif",
+          tech: "Node.js, Express.js, JQuery, MySQL, Bootstrap, Heroku, GitHub, Travis CI",
+          github: "https://github.com/Zerrtry/Project-2-Book-club-Front-end",
+          deployed: "https://nw-bookclub2020.github.io/FrontEnd.github.io/"
+        },
+        {
+          id: 3,
+          name: "Movie-Weather-Picker",
+          discription:"SPA with responsive layout. The application presents a movie to watch (poster, title, original release date, overview, and trailer if available) that is based on the current weather in the user's city.",
+          image: "images/weather-movie-picker.gif",
+          tech: "jQuery, BootStrap, CSS3, HTML5, OpenWeatherMap API, Movie Database API, Google fonts API, Fontawesome.",
+          github: "https://github.com/Zerrtry/Project-1-Weather-Movie-Picker",
+          deployed: "https://zerrtry.github.io/Weather-Movie-Picker/"
+        }
+      ]
 };
 
 export const lngRU = {
@@ -39,6 +68,35 @@ export const lngRU = {
     subject: "Тема Вашего письма", 
     message:"Пожалуйста, напишите Ваше сообщение здесь",
     gitHubRepo: "GitHub REPO",
-    webSite: "WEB SITE"
+    webSite: "WEB SITE",
+    projectsArr: [
+        {
+          id: 1,
+          name: "Canine Cupid",
+          discription:"Full-stack интернет приложение объединяющее владельцев собак, которые ищут друзей для своих любимых питомцев.",
+          image: "images/canine-cupid-2-0.gif",
+          tech: "React, Bootstarp, AXIOS, Mapbox-cli API, Github, AWS-S3, Node.js, Express.js, mongoose, bcrypt, MongoDB, MongoDB Atlas, Heroku, Travis CI, jest",
+          github: "https://github.com/Zerrtry/Project-3-Canine-Cupid-Front-End",
+          deployed: "http://canine-cupid-2-0.s3-website.us-east-2.amazonaws.com"
+        },
+        {
+          id: 2,
+          name: "Book Club",
+          discription:"Интернет приложение, которое позволяет участникам читать книги, оставлять отзывы и просматривать отзывы других участников, чтобы сделать верный выбор.",
+          image: "images/book-club.gif",
+          tech: "Node.js, Express.js, JQuery, MySQL, Bootstrap, Heroku, GitHub, Travis CI",
+          github: "https://github.com/Zerrtry/Project-2-Book-club-Front-end",
+          deployed: "https://nw-bookclub2020.github.io/FrontEnd.github.io/"
+        },
+        {
+          id: 3,
+          name: "Movie-Weather-Picker",
+          discription:"Интернет приложение, которое предлагает фильмы для просмотра, включая информацию о дате выпуска, краткий обзор и рекламный ролик. Выбор фильмов производится в соответствии с погодой в городе, указанном пользователем.",
+          image: "images/weather-movie-picker.gif",
+          tech: "jQuery, BootStrap, CSS3, HTML5, OpenWeatherMap API, Movie Database API, Google fonts API, Fontawesome.",
+          github: "https://github.com/Zerrtry/Project-1-Weather-Movie-Picker",
+          deployed: "https://zerrtry.github.io/Weather-Movie-Picker/"
+        }
+      ]
 }
 

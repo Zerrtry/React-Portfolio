@@ -28,15 +28,12 @@ function ContactBar() {
             </a>
         </li>
         <li className="icon">
-            {/* <a  */}
-            <Link to="/contact"
-            className="contact-me" 
-            // href="/contact" 
-            // rel="noopener noreferrer" 
-            // target="_blank" 
-            title={activeLanguage.contactMe}>
+            <Link
+                to="/contact"
+                className="contact-me" 
+                title={activeLanguage.contactMe}>
                 <i class="fas fa-envelope-square" aria-hidden="true"></i>
-            {/* </a> */}</Link>
+            </Link>
         </li>
     </ul> 
   );

@@ -7,7 +7,7 @@ import { useLanguage } from '../../utils/LngContext'
 function Header() {
     const activeLanguage = useLanguage()
     return (
-        <div className="row justify-content-center">
+        <div className="row justify-content-center top">
             <div className="col-sm">
                 <div className="header">
                     <div className="name">

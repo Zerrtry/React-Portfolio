@@ -7,7 +7,7 @@ import {useLanguage} from '../../utils/LngContext'
 function ButtonsOnlend() {
   const activeLanguage = useLanguage()
   return (
-    <div className="buttons-on-lend">
+    <div className="buttons-conteiner">
       <div>
         <Link to="/projects">
           <Button id="projects">

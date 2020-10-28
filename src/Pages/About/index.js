@@ -73,10 +73,10 @@ function About() {
           </div>
         </div>
       </div>
+      <ButtonsOnlend/>
       <div className="contacts-hidden">
         <ContactBar/>
       </div>
-      <ButtonsOnlend/>
     </div>
   );
 }

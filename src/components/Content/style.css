@@ -15,7 +15,7 @@
     height: 100%;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 2.5em;
+    padding: 5em 2em;
     color: white;
 }
 
@@ -37,7 +37,7 @@
 @media (max-width: 576px){
 
     .col-sm .content-conteiner {
-        padding: .5em .5em 2em .5em;
+        padding: 4em .5em 2em .5em;
     } 
     #leftBar,
     #rightBar {
@@ -50,10 +50,11 @@
         top: 4.5em;
         left: 0;
     }
-    .contacts-hidden{
-        display: inline-flex;
-        margin-top: .5em;
-        margin-bottom: 1em;
-        padding: 0;
+
+}
+
+@media (max-height: 415px){
+    .col-sm .content-conteiner {
+    padding: 2em .5em 2em .5em;
     }
 }
