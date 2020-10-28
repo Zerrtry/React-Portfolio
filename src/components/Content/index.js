@@ -1,10 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './style.css';
-import ToggleBar from '../ToggleBar';
+// import ToggleBar from '../ToggleBar';
 import About from '../../Pages/About';
 import ContactBar from '../ContactBar';
-import ButtonsOnlend from '../Buttons-on-lend';
 import ContactForm from '../../Pages/ContactForm'
 import Projects from '../../Pages/Projects'
 
