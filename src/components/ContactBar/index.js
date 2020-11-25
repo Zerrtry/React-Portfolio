@@ -20,7 +20,7 @@ function ContactBar() {
         <li className="icon">
             <a 
             className="linkedin" 
-            href="https://www.linkedin.com/in/dmitrii-zverev-577957b7/" 
+            href="https://www.linkedin.com/in/dmitrii-zverev-us/" 
             rel="noopener noreferrer" 
             target="_blank" 
             title="LinkedIn">
